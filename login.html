@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogify – Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="anti-gravity-container"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span>✍️</span> Blogify</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="create-blog.html">Create Blog</a></li>
+        <li><a href="login.html" class="btn btn-outline active">Login</a></li>
+        <li><a href="register.html" class="btn btn-primary">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="auth-page">
+    <div class="auth-card float-card">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Log in to continue your writing journey</p>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary full-width">Log In</button>
+      </form>
+
+      <p class="form-footer">
+        Don't have an account? <a href="register.html">Sign up free</a>
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Blogify · Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

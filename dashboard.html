@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogify – Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="anti-gravity-container"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span>✍️</span> Blogify</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="create-blog.html">Create Blog</a></li>
+        <li><a href="login.html" class="btn btn-outline">Login</a></li>
+        <li><a href="register.html" class="btn btn-primary">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="dashboard-header">
+      <div>
+        <h2 class="section-title">Your Dashboard</h2>
+        <p class="section-subtitle">Manage your posts and track your progress</p>
+      </div>
+      <a href="create-blog.html" class="btn btn-primary">+ New Post</a>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card float-card">
+        <div class="number">12</div>
+        <div class="label">Total Posts</div>
+      </div>
+      <div class="stat-card float-card">
+        <div class="number">8</div>
+        <div class="label">Published</div>
+      </div>
+      <div class="stat-card float-card">
+        <div class="number">4</div>
+        <div class="label">Drafts</div>
+      </div>
+      <div class="stat-card float-card">
+        <div class="number">1.2k</div>
+        <div class="label">Total Views</div>
+      </div>
+    </div>
+
+    <!-- Posts Table -->
+    <h3 style="margin-bottom: 1rem;">Your Posts</h3>
+    <table class="posts-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Views</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Future of Web Development in 2026</td>
+          <td><span class="status-badge status-published">Published</span></td>
+          <td>Sep 15, 2026</td>
+          <td>342</td>
+          <td class="actions">
+            <button class="btn btn-secondary action-btn">Edit</button>
+            <button class="btn btn-danger action-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Mastering Responsive Design with CSS</td>
+          <td><span class="status-badge status-published">Published</span></td>
+          <td>Sep 12, 2026</td>
+          <td>218</td>
+          <td class="actions">
+            <button class="btn btn-secondary action-btn">Edit</button>
+            <button class="btn btn-danger action-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>How I Built a Habit of Daily Writing</td>
+          <td><span class="status-badge status-published">Published</span></td>
+          <td>Sep 10, 2026</td>
+          <td>156</td>
+          <td class="actions">
+            <button class="btn btn-secondary action-btn">Edit</button>
+            <button class="btn btn-danger action-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>My Thoughts on Remote Work Culture</td>
+          <td><span class="status-badge status-draft">Draft</span></td>
+          <td>Sep 14, 2026</td>
+          <td>—</td>
+          <td class="actions">
+            <button class="btn btn-secondary action-btn">Edit</button>
+            <button class="btn btn-danger action-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Understanding Async/Await Like a Pro</td>
+          <td><span class="status-badge status-published">Published</span></td>
+          <td>Sep 5, 2026</td>
+          <td>489</td>
+          <td class="actions">
+            <button class="btn btn-secondary action-btn">Edit</button>
+            <button class="btn btn-danger action-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Building Better Habits in 30 Days</td>
+          <td><span class="status-badge status-draft">Draft</span></td>
+          <td>Sep 18, 2026</td>
+          <td>—</td>
+          <td class="actions">
+            <button class="btn btn-secondary action-btn">Edit</button>
+            <button class="btn btn-danger action-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Blogify · Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
